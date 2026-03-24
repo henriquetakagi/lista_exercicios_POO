@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 public class Carro {
     private String marca;
     private String modelo;
@@ -8,6 +10,33 @@ public class Carro {
         this.modelo = modelo;
         this.ano = ano;
     }
+    public Carro(){
+
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+    public String getModelo() {
+        return modelo;
+    }
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+    public int getAno() {
+        return ano;
+    }
+    public void setAno(int ano) {
+        if(1886 < ano && ano < 2026){
+            this.ano = ano;
+        }else {
+            System.out.println("Erro 'ano' inválido");
+        }
+    }
+
     public void ImprimirDados(){//ou exibir() faz a mesma coisa
         System.out.println("- Dados do Carro -");
         System.out.println("Marca :" + marca);
