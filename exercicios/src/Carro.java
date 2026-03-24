@@ -5,6 +5,7 @@ public class Carro {
     private String modelo;
     private int ano;
 
+    //Metodo construtor
     public Carro(String marca, String modelo, int ano){
         this.marca = marca;
         this.modelo = modelo;
