@@ -12,7 +12,9 @@ public class Carro {
         this.ano = ano;
     }
     public Carro(){
-
+        this.marca = "Volkswagen";
+        this.modelo = "Fusca";
+        this.ano = 0;
     }
 
     public String getMarca() {

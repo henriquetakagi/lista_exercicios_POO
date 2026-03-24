@@ -7,8 +7,10 @@ public class Main {
 
         Carro carro1 = new Carro("Honda","HR-V", 2025);
         Carro carro2 = new Carro("Nissan","GT-R", 2011);//Vantagem principal de de usar o metodo construtor não polui a tela e não tem chance de deixar dado passar as vezes posso chamar setMarca setModelo e esquece o set Ano
+        Carro carro3 = new Carro();
         lista_carro.add(carro1);
         lista_carro.add(carro2);
+        lista_carro.add(carro3);//Oque muda na hora de imprimir esse novo que eu criei por padrao ja vem com os valores inseridos
         for(int i = 0; i < lista_carro.size(); i++){
             lista_carro.get(i).ImprimirDados();
         }
