@@ -4,17 +4,20 @@ public class Carro {
     private String marca;
     private String modelo;
     private int ano;
+    static int totalCarros = 0;
 
     //Metodo construtor
     public Carro(String marca, String modelo, int ano){
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+        totalCarros ++;
     }
     public Carro(){
         this.marca = "Volkswagen";
         this.modelo = "Fusca";
         this.ano = 0;
+        totalCarros ++;
     }
 
     public String getMarca() {
@@ -52,5 +55,5 @@ public class Carro {
         return 2026 - ano;
     }// Essa funcao retorna um valor int e executa apenas uma açao
 
+}//isso é um teste
 
-}
