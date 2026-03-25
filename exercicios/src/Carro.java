@@ -54,6 +54,9 @@ public class Carro {
     public int idadeDoCarro(){
         return 2026 - ano;
     }// Essa funcao retorna um valor int e executa apenas uma açao
-
+    static void imprimirTotal(){
+        System.out.println("Quantidade Total de Carros : "+ totalCarros);
+        //da erro quando eu tento chamar um atributo porque no metodo static é o geral ou seja seria o carro inteiro ja o atributo é um atributo de um carro em especifico
+    }
 }//isso é um teste
 

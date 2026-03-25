@@ -18,6 +18,7 @@ public class Main {
         for(int i = 0; i < lista_carro.size(); i++){
             lista_carro.get(i).ImprimirDados();
         }
+        Carro.imprimirTotal();
         System.out.println(Carro.totalCarros);//porque o atributo static é um valor da classe e não do objeto, resumindo atributo de static vale para classe toda e de instacia para cada objeto
     }//isso é um teste
 }
